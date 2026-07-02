@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes create-expo-app@latest mobile --template default --no-install)",
+      "Bash(npx --yes expo install @react-native-async-storage/async-storage expo-linear-gradient @expo/vector-icons)",
+      "Bash(npx expo *)",
+      "Bash(curl -s -o /dev/null -w \"status: %{http_code}\\\\n\" \"http://localhost:8081/status\")",
+      "Bash(curl -s -o /dev/null -w \"Metro 서버: %{http_code}\\\\n\" \"http://localhost:8081/status\")",
+      "Bash(curl -s -o /dev/null -w \"LAN 접속: %{http_code}\\\\n\" \"http://192.168.35.246:8081/status\")",
+      "Bash(curl -s \"https://api.expo.dev/v2/versions/latest\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
